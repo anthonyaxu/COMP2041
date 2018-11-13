@@ -1,0 +1,63 @@
+Diary for COMP2041 assignment 2 - z5165674
+
+Date            Start           Stop            Activity            Comments
+---------------------------------------------------------------------------------------------------------------------
+23/10/18        21:00           23:00           Coding              Started level 0. Got the login and registering
+                                                                    registering working. Started to work on the
+                                                                    frontend feed.
+
+24/10/18        12:00           14:00           Coding              Completed the last part of level 0 (showing the 
+                                                                    feed from the .json file). Began working on
+                                                                    level 1 login and register.
+
+24/10/18        15:00           17:00           Coding              Worked on the feed part of level 1. 
+
+25/10/18        13:00           15:00           Refactoring         Change code and moving them into functions to 
+                                                                    make the code more readable and easier to 
+                                                                    understand.
+
+25/10/18        16:00           19:00           Debugging           Found some bugs when logging in and registering.
+                                                                    Also fixed some styles when the posts show in the
+                                                                    feed.
+
+25/10/18        21:00           00:00           Coding              Completed level 1 tasks (very basic, probably have
+                                                                    to change some things but for now it's working)
+
+26/10/18        15:00           18:00           Coding              Starting working on liking a post, creating new
+                                                                    buttons and everything that keep track if you've
+                                                                    already like it.
+
+26/10/18        21:00           22:00           Debugging           Found some weird bugs when trying to like a post 
+                                                                    and major error as well. Can't seem to pass through
+                                                                    the id of the post to future functions.
+
+27/10/18        11:00           13:00           Coding              Completed liking a post and working on viewing
+                                                                    likes and comments on a post. Creating modals for
+                                                                    everything.
+
+27/10/18        15:00           16:30           Refactoring/        Making a navigation bar at the header to show
+                                                Debugging           profile and logout button and uploading files. Also
+                                                                    refactored some code around into better functions
+                                                                    and moved some into helper.js.
+
+27/10/18        18:00           22:00           Coding              Started working on posting new content to the server.
+                                                                    Created a new modal to post image and description.
+
+28/10/18        10:00           13:00           Coding              Completed posting new content and worked on showing
+                                                                    the user's profile. Wrote more functions in helper.js
+                                                                    to create modals and other things.
+
+28/10/18        14:00           16:00           Coding              Worked on showing different pages of the feed when
+                                                                    a button is pressed (not in a single page). 
+
+28/10/18        17:00           18:30           Debugging           Got errors/warnings when trying to clear the feed to make
+                                                                    way for the next page of posts. Fixed in the end
+                                                                    as you just had to remove all children of 'large-feed'.
+
+28/10/18        19:00           21:00           Coding              Completed level 2 and did lots of testing to see if
+                                                                    anything would break. Had a couple of warnings and
+                                                                    errors but managed to fix them up.
+
+28/10/18        21:30           22:00           Refactoring         Removed any useless code and print statements to
+                                                                    make code more readable and less messy. Added
+                                                                    more comments to everything too.

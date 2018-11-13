@@ -1,0 +1,23 @@
+[
+  {
+    "username": "baz",
+    "password": "baz1",
+    "name": "Barry",
+    "id"  : 1,
+    "posts": [1]
+  },
+  {
+    "username": "a_cop",
+    "password": "cop1",
+    "name": "Not a cop",
+    "id"  : 2,
+    "posts": [2]
+  },
+  {
+    "username": "bad_boy",
+    "password": "bad1",
+    "name": "Good Boy",
+    "id"  : 3,
+    "posts": [3]
+  }
+]

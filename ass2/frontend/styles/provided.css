@@ -1,0 +1,285 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    /*visibility: hidden;*/
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+.post {
+    max-width: 640px;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-title {
+    padding: 20px 40px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-thumb {
+    margin: 0;
+    padding: 3px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid snow;
+}
+
+.post-image {
+    width: 640px;
+    height: 640px;
+}
+
+@media screen and (max-width: 500px) {
+    .post {
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.0975);
+        border-top: 1px solid rgba(0,0,0,.0975); 
+        max-height: 60vh;
+    }
+
+    .post-image {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+
+    #feed > * {
+        flex: 1 1 45%;
+        height: auto;
+    }
+}
+
+input[type=text], input[type=password] {
+    width: 20%;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #ECEBEB;
+}
+
+.comment,
+.desc {
+    width: 50%;
+    height: 100px;
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    display: inline-block;
+    text-align: 100px;
+    border: 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #ECEBEB;
+}
+
+.container {
+    padding: 10px 0px;
+    margin: 10px;
+    background-color: white;
+    display: block;
+}
+
+.feed {
+    padding: 10px 0px;
+    margin: 10px;
+    background-color: white;
+    display: none;
+}
+
+button {
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 20%;
+    height: 45px;
+    border: 1px;
+    color: black;
+    background-color: white;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.post-likes {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px;
+    width: 65px;
+}
+
+.post-comments {
+    margin: 10px;
+    width: 90px;
+}
+
+.post-description {
+    margin: 10px;
+    padding: 0 0 0;
+    font-size: 20px;
+}
+
+.post-time {
+    margin: 10px;
+    font-size: 10px;
+    font-style: oblique;
+}
+
+
+/* Dropdown taken from https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: auto;
+    right: 0;
+    background-color: gainsboro;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+/* Modal CSS taken from https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: grey;
+    float: right;
+    font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 20px 16px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.upload-btn {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.prev-btn {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.next-btn {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    float: right;
+}
+
+/* Add your styles here */
