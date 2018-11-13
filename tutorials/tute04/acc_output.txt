@@ -1,0 +1,16 @@
+ User Name : z5555555              Aliases :
+                  Uid : 25068
+               Groups :
+              Expires : 31 Dec 2018
+         User classes : 3978_Student, COMP2041_Student[15dec2018]
+                      : COMP2121_Student[15dec2018], COMP2511_Student[15dec2018]
+                      : COMP1511_Tutor[16dec2018], COMP3900_Student[15dec2018]
+                 Name : Michael Yang Zhou
+Password last changed : 2018/03/02.21:23:19
+       Home Directory : /import/adams/1/mzhou
+                Name : Mr Zhou, Michael Yang (Michael Yang Zhou)
+            Position : UGRD (Faculty of Engineering)
+         UNSW Number : 5555555
+           UNSW Mail : z5555555@unsw.edu.au
+           UNSW Home : //INFPWFS219.ad.unsw.edu.au/Student038$/z5555555
+            CSE Home : /import/kamen/3/z5555555

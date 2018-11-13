@@ -1,0 +1,26 @@
+./legit.pl add a
+./legit.pl commit -m "test"
+./legit.pl log
+./legit.pl show 0:a
+
+./legit.pl gibberish
+
+./legit.pl init
+./legit.pl
+
+./legit.pl init
+
+touch a b c
+./legit.pl add a
+./legit.pl add *
+./legit.pl add -invalidfile
+./legit.pl add filedoesntexist
+./legit.pl add ?validfilebutinvalidname
+./legit.pl add "This file has a long name"
+./legit.pl add "The second file won't be checked" a
+touch d e f
+./legit.pl add d e f nonexistentfile
+./legit.pl add d e f
+
+echo testing >testing_legit-one.txt
+./legit.pl add testing_legit-one.txt

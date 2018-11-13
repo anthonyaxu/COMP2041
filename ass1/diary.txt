@@ -1,0 +1,71 @@
+Diary Log for COMP2041 assignment 1 - legit.pl
+author: Anthony Xu - z5165674@cse.unsw.edu.au
+
+Date        Start       Stop        Activity        Comments
+-------------------------------------------------------------------------------------------------------------------
+24/9/18     21:20       21:50       Coding          Implemented init command and usage print statements.
+
+24/9/18     22:00       22:50       Coding          Implemented most of add command. Added file_exists and 
+                                                    copy_files subroutines to legit.pl.
+                                                    
+24/8/18     22:50       23:00       Debugging/      Forgot to add .index and .commits sub-directories inside .legit
+                                    Refactoring     Wrote comments to make functions and code more clear.
+                                             
+24/9/18     23:00       01:00       Coding          Completed most of the '-m' commit, needs more testing. Added
+                                                    initialise_commits, commit_files, is_folder_empty, clean_index, 
+                                                    and commit usage subroutines.
+                                                    
+25/9/18     11:00       12:00       Coding/         Finished commit part but then found some bugs in it (not checking
+                                    Debugging       the previous commit to see if the files were unchanged). Added 
+                                                    check_unchanged, write_commit_message and is_file_same.
+                                                    
+25/9/18     13:00       15:00       Coding          Completed 'log' part and started on 'show' part. Added print_file, 
+                                                    and add_to log. Used the model legit (on cse servers) to test some
+                                                    edge cases for show.
+                                                    
+25/9/18     16:00       21:00       Debugging       Modified commit_files subroutine because there were a lot of errors/
+                                                    doing the wrong thing when commiting things. Changed how the add 
+                                                    function and the index directory works.
+                                                    
+25/9/18     21:30       22:30       Coding          Finished with subset0 (passing all autotests). Will do further 
+                                                    testing on functionality and edge cases after code is refactored. 
+                                                    
+25/9/18     23:00       00:00       Testing         Running my own test scripts on the commands in subset0.
+                                                    
+26/9/18     12:00       13:00       Coding          Started on first part of subset1 (-a commit). Had to refactor some lines
+                                                    of the initial commit to make the '-a' flag work.
+                                                    
+26/9/18     15:00       16:30       Debugging       Realised that the '-a' flag can be after the message and not only before
+                                                    the -m flag. Also realised that multiple -m flags can be used and only the
+                                                    message for the last -m will count.
+                                                    
+26/9/18     19:00       21:30       Refactoring     Made check_unchanged less specific. i.e. it can take in any files and
+                                                    compare it to the previous commit. Before it could only compare 
+                                                    the index and the previous commit.
+                                                    
+27/9/18     13:00       16:00       Coding          Started working on the 'rm' command of legit.pl. Realised that tags can be
+                                                    anywhere and appear more than once. Added remove_file subroutine. 
+                                                    
+27/9/18     16:30       17:30       Debugging       Found some errors/bugs with the add command after most of rm command was
+                                                    implemented. eg. legit.pl needs to know if the added file has been 
+                                                    deleted or was never in the directory. 
+                                                    
+27/9/18     20:00       22:00       Coding          Mostly completed the first two tasks of subset1 (-a and rm). Need to
+                                                    do more tests on edge cases (what type of error messages to print, etc).
+                                                    Passes all autotests until subset1_15.
+                                                    
+28/9/18     16:00       19:00       Debugging       Fixed 'rm' command, problem with the flags. Also using test_legit.pl
+                                                    to compare my legit.pl to the reference implementation.
+                       
+30/9/18     15:00       17:00       Debugging       Fixed multiple printing errors (when legit.pl doesn't recognise command
+                                                    and when no command is input).
+                                                    
+30/9/18     19:00       20:00       Testing         Running my own test scripts on the commands in subset1.
+
+1/10/18     17:00       18:00       Refactoring     Refactored code and added some more comments to make code more readable.
+
+2/10/18     15:00       16:00       Refactoring     Move error prints into subroutubes, easier to keep track of them.
+                                                    Also added more comments.
+                                                    
+3/10/18     18:00       20:00       Debugging/      Add some more comments to code to make it easier to follow. 
+                                    Refactoring     Modified some test scripts to test more functionality of 'rm' command
